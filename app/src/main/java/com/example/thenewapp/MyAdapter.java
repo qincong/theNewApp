@@ -30,6 +30,7 @@ public class MyAdapter extends RecyclerView.Adapter<MyAdapter.ViewHloder>{
     @Override
     public void onBindViewHolder(ViewHloder holder, int position) {
         //holder.img.setImageResource(R.drawable.img);
+        String s=video_data.get(position).get(1);
         holder.videoName.setText(video_data.get(position).get(1));
 
 
